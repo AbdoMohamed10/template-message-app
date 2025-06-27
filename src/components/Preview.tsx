@@ -51,7 +51,7 @@ const Preview = () => {
                     <div
                         className="absolute right-[-13px] top-[25px] h-15 w-1.5 rounded-tr-[6px] rounded-br-[6px] bg-white"></div>
                     <div className="flex flex-col justify-between h-full max-h-full">
-                        <div className="overflow-scroll">
+                        <div className="overflow-y-auto">
                             <div
                                 className="relative m-4.5 bg-white min-h-[115px] min-w-4/5 w-4/5 max-w-4/5 rounded-b-[12px] rounded-tr-[12px]">
                                 <div className="absolute top-0 left-[-6px]">

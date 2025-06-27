@@ -5,13 +5,8 @@ export const isValidName = (name: string) => {
 }
 
 export const isValidUrl = (url: string) => {
-    try {
-        new URL(url);
-        return true;
-    } catch (err) {
-        console.log(err)
-        return false;
-    }
+    const pattern = /^https?:\/\/(?=.*\.[^\s/]{2,})[^\s/]+\.[^\s/]+(?::\d+)?(?:\/[^\s?#]*)?(?:\?[^\s#]*)?(?:#\S*)?$/;
+    return pattern.test(url);
 }
 
 export const isValidPhoneNumber = (phone: string) => {
